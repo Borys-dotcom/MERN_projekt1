@@ -6,17 +6,17 @@ const Table = ({ events, deleteEvent, ...rest }) => {
       <thead>
         <tr>
           <th>#</th>
-          <th>imię i nazwisko</th>
-          <th>wydarzenie</th>
-          <th>miasto</th>
-          <th>akcja</th>
+          <th>Imię i Nazwisko</th>
+          <th>Wydarzenie</th>
+          <th>Miasto</th>
+          <th className="trAction">Akcja</th>
         </tr>
       </thead>
       <tbody>
         {events.map((row, index) => {
           return (
             <tr key={row._id}>
-              <td>{index}</td>
+              <td>{index+1}</td>
               <td>{row.name}</td>
               <td eventkey={row.event.key}>{row.event.val}</td>
               <td citykey={row.city.key}>{row.city.val}</td>

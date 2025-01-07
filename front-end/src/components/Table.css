@@ -1,0 +1,41 @@
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+thead tr th {
+    background-color: black;
+}
+
+th, td {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+tr {
+    height: 30px;
+    border: 1px solid black;
+}
+
+tr:nth-of-type(2n) {
+    background-color: #eee;
+}
+
+tr:nth-of-type(2n+1) {
+    background-color: #999;
+}
+
+button {
+    width: 100px;
+    height: 20px;
+    background-color: red;
+}
+
+.trAction {
+    width: 150px;
+}
